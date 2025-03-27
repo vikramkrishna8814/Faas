@@ -1,5 +1,5 @@
 specVersion: 0.35.0
-name: my-java-function
+name: my-java-function-fn
 runtime: springboot
 created: 2025-03-27T09:32:45.836795655Z
 invoke: cloudevent
