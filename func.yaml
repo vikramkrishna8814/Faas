@@ -1,0 +1,17 @@
+specVersion: 0.35.0
+name: my-java-function
+runtime: springboot
+created: 2025-03-27T09:32:45.836795655Z
+invoke: cloudevent
+build:
+  buildEnvs:
+  - name: BP_NATIVE_IMAGE
+    value: "false"
+  - name: BP_JVM_VERSION
+    value: "17"
+  - name: BP_MAVEN_ACTIVE_PROFILES
+    value: native
+deploy:
+  healthEndpoints:
+    liveness: /actuator/health
+    readiness: /actuator/health
